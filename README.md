@@ -6,17 +6,14 @@ In this work there is a basic workthrough of using an keras API written in Pytho
 # The Object of the Dog Breed Competition
 The point of the compeition was to take dogs and identify them and classify them within 120 differing categories.
 
-
-As a contextual reference, deep learning is a subset of machine learning that allows algorithms to train itself in order to perform tasks like image and speech recognition. Deep learning accomplishes this by revealing immense amounts of data to multi-layered neural networks.
-
 This document will walk you through the entire process of:
 
-Setting up Google Drive to mount a virtual drive
-Load the dog images from Kaggle
-Transform the images for use by Keras and CNNs
-Make test and training groups
-Prepare data to fit into a deep learning model
-Use a Functional API deep learning model
-with inception module architecture
-Use BatchNormalization to decrease overfitting
-Create submission file to Kaggle for evaluation
+*Setting up Google Drive to mount a virtual drive\n
+*Load the dog images from Kaggle\n
+*Transform the images for use by Keras and CNNs\n
+*Make test and training groups\n
+*Prepare data to fit into a deep learning model\n
+*Use a Functional API deep learning model\n
+*with inception module architecture\n
+*Use BatchNormalization to decrease overfitting\n
+*Create submission file to Kaggle for evaluation\n
