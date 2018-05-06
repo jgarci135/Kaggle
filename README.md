@@ -1,3 +1,4 @@
+
 # Kaggle Competition
 # Deep Learning with Python, Keras & Tensorflow
 
@@ -8,12 +9,12 @@ The point of the compeition was to take dogs and identify them and classify them
 
 This document will walk you through the entire process of:
 
-"*Setting up Google Drive to mount a virtual drive\n,"
-"*Load the dog images from Kaggle\n,"
-"*Transform the images for use by Keras and CNNs\n",
-"*Make test and training groups\n",
-"*Prepare data to fit into a deep learning model\n,"
-"*Use a Functional API deep learning model\n,"
-"*with inception module architecture\n",
-"*Use BatchNormalization to decrease overfitting\n",
-"*Create submission file to Kaggle for evaluation\n",
+Setting up Google Drive to mount a virtual drive.
+Load the dog images from Kaggle.
+Transform the images for use by Keras and CNNs.
+Make test and training groups.
+Prepare data to fit into a deep learning model.
+Use a Functional API deep learning model.
+with inception module architecture.
+Use BatchNormalization to decrease overfitting.
+Create submission file to Kaggle for evaluation.
