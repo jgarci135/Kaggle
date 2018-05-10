@@ -43,13 +43,15 @@ The files were then made into a vector and then a numpy array
 
 The files were also shuffled to help the training parameter learn more with better generalization. 
 
-A model with 4 layers was created
+A model with 6 layers was created
 
 A prediction evaluation was made against the test set and the probabilities of correct classification of each dog made into a CSV file.
+
+**Updated model was adjusted to include 64 filters compared to 32 and also changed to a 6 layer CNN.  Used real time augmenting fo the dog pictures and placed inside the model.  This increased the predective compacity and ultimatly the score from Kaggle.
 ## Results Summary
-The results of the score uploaded to Kaggle are placed at 5.03557 which places the results of the project in the bottom half of the public leaders as they were submitted.  
+The results of the score uploaded to Kaggle are placed at 4.78831 which places the results of the project in the better than the benchmark.  
 The biggest difference to most of the leaders on the board are the use of transferred learning or resource allocation.  This preparation of the data was created without the use of and transferred rates from either the Stanford data sets or the larger sets for images that included dogs.
-Without using the additional test sets or using augmentation of the Dog breed images there is not enough data to increase the learning of features to better the results. The best rates using the inception model with four layers and reducing the picture quality and size to be used in the model while running multiple epochs and saving the weights for each run and the purposed hyper parameters are limited to about 25% accuracy of the validation set.
+Without using the additional test sets or using augmentation of the Dog breed images there is not enough data to increase the learning of features to better the results. The best rates using the inception model with four layers and reducing the picture quality and size to be used in the model while running multiple epochs and saving the weights for each run and the purposed hyper parameters are limited to about 25% accuracy of the validation set. ( With augmentation, an accuracy nearing 90% was reached. This issue was the real time augmentation does not use a validation set and simply updates the weights for the model.)
 ## Issues and pitfalls
 Resources to run this type of data set must be significant enough to help with the ease of finding the best possible results.  GoogleColab is a free service and will allocate about 12-13 mb of RAM for the virtual machine and has a 12 hour limit of continuous use.  
 First issue is that Google Colab is not integrated with any directories which require a work around to get files into Colab.  Its possible to load directly to CoLab but if a disconnect occurs the file must be re-uploaded.  This is an issue for files that are >500mb file as they can take upwards of 1 hour to upload.  The solution to this is to upload them once to Google Drive and then us a mounted drive inside of Google Colab to pull the information to work on.  This is much faster.  An issue to this is that the Colab is slow as cycling through the mounted drive and loops which make pre-processing difficult on Google Colab.  It was necessary to use the local drive to pre-processes all the images and then create the numpy arrays and upload them to Google Drive and then use them in the Colab.  The Colab was being used mainly for the GPU computational power.  
